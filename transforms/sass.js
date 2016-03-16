@@ -9,7 +9,7 @@ module.exports = function(fileObj, options, done) {
     if (err) {
       return done(err);
     }
-    fileObj.content = results.css;
+    fileObj.contents = results.css.toString();
     done(null, fileObj);
   });
 };
